@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="tw.edu.nfu.NamLimSports" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<!-- versionCode is optional and Android only -->
+  <name>NamLimSports</name>
+  <description>
+   Nam Lim Sports is a national distributor of brand name sporting goods and equipment.
+  </description>
+  <author href="https://www.nfu.edu.tw/zh/" email="10867118@gm.nfu.edu.tw">
+      Thi-Manh Nguyen
+  </author>
+  <content src="index.html" />
+  <platform name="android">
+    <icon src="res/sport.png" />
+    <icon src="res/android/sport.png" density="ldpi" />
+    <icon src="res/android/sport.png" density="mdpi" />
+    <icon src="res/android/sport.png" density="hdpi" />
+    <icon src="res/android/sport.png" density="xhdpi" />
+  </platform>
+</widget>

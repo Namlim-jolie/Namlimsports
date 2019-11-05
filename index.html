@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Middle Exam</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: gray;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+  <!-- Start of first page -->  
+  <div is="page" id="home" data-role="page" style="background-color: rgb(216, 223, 188); background-size:cover;">
+    <div data-role="header" data-position="fixed" data-theme="a">
+      <h1 style="color:rgb(92, 170, 40);text-align:center;font-size:24px;">Nam Lim Sports</h1>
+      <a class="ui-btn ui-btn-right ui-btn-icon-left ui-icon-info ui-btn-icon-notext ui-corner-all" style="margin:12px;"></a>
+    </div>
+    <div style="margin-top: 30px;" role="main" class="ui-content">
+      <div is="grid" class="ui-grid-b" style="height:200px">
+        <div class="ui-block-a" style="height:100%;text-align:center">
+          <a href="#Map" rel="internal">
+            <img src="image/map.png" style="width:80px; margin:5px 15px 5px 18px">
+            <h5  style="text-align:center; margin-top:10px;">Map</h5>
+          </a>
+        </div>
+        <div class="ui-block-b" style="height:100%;text-align:center">
+          <a href="#Login" rel="internal">
+            <img  src="image/sign_in.png" style="width:80px; margin:5px 15px 5px 18px">
+            <h5  style="text-align:center; margin-top:10px;">Login</h5>
+          </a>
+        </div>
+        <div class="ui-block-c" style="height:100%;text-align:center">
+          <a href="#Contactus" rel="internal">
+            <img  src="image/contact.png" style="width:80px; margin-left:12px;">
+            <h5  style="text-align:center; margin-top:10px;margin-left:15px;">Contact us</h5>
+          </a>
+        </div>
+      </div>
+      <div is="grid" class="ui-grid-b" style="height:300px">
+        <div class="ui-block-a" style="height:100%;text-align:center">
+          <a href="#Sportequipments" rel="internal">
+            <img  src="image/sport.png" style="width:80px; margin-top:15px 5px 18px;">
+            <h5  style="text-align:center; margin-top:10px;">Sport equipments</h5>
+          </a>
+        </div>
+        <div class="ui-block-b" style="height:100%;text-align:center">
+          <a href="#Shoes" rel="internal">
+            <img  src="image/shoes.png" style="width:80px; margin:5px 15px 5px 18px; ">
+            <h5  style="text-align:center; margin-top:10px;">Shoes</h5>
+          </a>  
+        </div>
+        <div class="ui-block-c" style="height:100%;text-align:center">
+          <a href="#Clothing" rel="internal">
+            <img  src="image/Clothes.jpg" style="width:80px; margin:5px 15px 5px 18px;">
+            <h5  style="text-align:center; margin-top:10px;margin-left:20px;">Clothing</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>@Nam Lim Sports Company</h3>            
+    </div>
+  </div>
+  
+  <!-- Start of Map page  -->
+  <div is="page" id="Map" data-role="page">
+    <div is="content" role="main" class="ui-content">
+      <div is="navbar" data-role="navbar" id="map_btn">
+        <ul>
+          <li is="navbtn">
+            <a class="ui-btn-active ui-state-persist">Gaoxiong</a>
+          </li>
+          <li is="navbtn">
+            <a>Taizhong</a>
+          </li>
+          <li is="navbtn">
+            <a>Taibeí</a>
+          </li>
+        </ul>
+      </div>
+      <div is="gmap" style="width:500px;height:500px;" zoom="10" address="GaoxiongS" id="map">
+      <img src="image/map2.jpg" alt="">
+      </div>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>@Nam Lim Sports Company</h3>            
+    </div>
+  </div>
+
+  
+  <!-- Start of Login page  -->
+  <div  is="page" id="Login" data-role="page" data-position="fixed" data-theme="c">
+    <div is="header" data-role="header" data-position="fixed" data-theme="a">
+      <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide"s href="index.html" rel="internal"></a>
+      <h3>Nam Lim Sports</h3>
+    </div>
+    <div is="content" role="main" class="ui-content">
+      <div is="fieldcontain" class="ui-field-contain">
+        <label for="accName">Username</label>
+        <input is="text-input" type="text" name id="accName">
+      </div>
+      <div is="fieldcontain" class="ui-field-contain">
+        <label for="passwd">Password</label>
+        <input is="text-input" type="password" name id="passwd">
+      </div>
+      <a is="button" id="loginBtn" class="ui-btn ui-btn-b ui-disabled">Login</a>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>@Nam Lim Sports Company</h3>            
+    </div>
+  </div>
+  
+  
+  <!-- Start of Contact us page  -->
+  <div is="page" id="Contactus" data-role="page" data-position="fixed" data-theme="c">
+    <div is="header" data-role="header" data-position="fixed" data-theme="a">
+      <h1 style="color:rgb(92, 170, 40);text-align:center;font-size:24px;">Nam Lim Sports</h1>
+      <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+    </div>
+    <h1>Contact us</h1>
+    <div class="table" id="content">
+      <div style="margin-bottom: 30px">
+        <br>
+        <form action="/action_page.php" id="contact_form">
+          <p>Your name:<br>
+            <input type="text" style="width:100%; text-align: left" name="name" value=""></p>
+            <p>Email address:<br>
+              <input type="text" style="width:100%; text-align: left" name="email" value=""></p>
+              <p>Your message<br>
+                <textarea name="message" style="width: 100%" rows="5"></textarea></p>
+                <input type="submit" class="button g-recaptcha"
+                value="Send message"
+                data-sitekey="6Lfib1QUAAAAAG7LdFQGJuGMEwK0-qXlXcSDcr0Z" data-callback='submit_with_recaptcha'>
+              </form>
+            </div>
+            <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+              <h3>@Nam Lim Sports Company</h3>            
+            </div>
+          </div>
+        </div>
+        
+        <!-- Start of Sport equipments page  -->
+        <div is="page" id="Sportequipments" data-role="page" data-position="fixed" data-theme="c">
+          <div id="banner" style="background-position: center center; background-size: cover; background-image: url(image/a.jpg); height: 150px; width: 350px;" >
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide"s href="index.html" rel="internal"></a>
+          </div>
+          <div is="content" role="main" class="ui-content">
+            <h2 style="text-align: center">Sport Equipments</h2>
+            <table >
+              <tr>
+                <td >
+                  <p><strong>Basketball</strong></p>
+                  <p>Our selection of basketball gear and equipment offers a wide range of court products, training tools, and coaching solutions to help your team toward victory.</p> 
+                </td>
+                <td ><img src="image/basketball.png" alt="basketball" style="float:right;width:150px;height:150px;"></td>
+                
+              </tr>
+              <tr>
+                <td ><img src="image/soccer.png" alt="Soccer" style="float:left;width:150px;height:150px;"></td>
+                <td >
+                  <p><strong>Soccer</strong></p>
+                  <p>Nam Lim Sports offers the most complete line of soccer equipment and gear in the industry including some of the best soccer goals for sale like Kwik Goal, Jaypro and PUGG pop-up soccer goals. We also offer an extensive line of soccer training equipment to help coaches build championship teams at every level of play.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><strong>Tennis</strong></p>
+                  <p>Youth, high school, college, and adult tennis facilities demand top-performing equipment to reduce training downtime and improve overall conditioning. Nam Lim Sports has the answer. We offer a wide selection of tennis court equipment and supplies, so you can be ready for a victorious season.</p>
+                </td>
+                
+                <td><img src="image/tennis.png" alt="tennis" style="float:right;width:150px;height:150px;"></td>
+              </tr>
+              <tr>
+                <td><img src="image/table_tennis.png" alt="table table_tennis" style="float:left;width:150px;height:150px;"></td>
+                
+                <td>
+                  <p><strong>Table tennis</strong></p>
+                  <p>Worldwide, the women’s game is comparable in organization to the men’s, and women take part in world championships and all other organized events. Table tennis as well as being fully organized is also extremely popular as a recreational game and is so played in all types of sports clubs, social clubs, and game rooms, in the home, and even out-of-doors when conditions are reasonably calm.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+          <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+            <h3>@Nam Lim Sports Company</h3>            
+          </div>
+        </div>
+        
+        <!-- Start of Shoes page  Shoes-->
+        <div is="page" id="Shoes" data-role="page" data-position="fixed" data-theme="c">
+          <div id="banner" style="background-position: center center; background-size: cover; background-image: url(image/Red-Label-Man.jpg); height: 150px; width: 350px;" >
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide"s href="index.html" rel="internal"></a>
+          </div>
+          <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+              <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">All shoes</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+              <li is="listview-li">
+                <a href="#Content1" data-transition="pop"  style="background-color: rgb(236, 234, 110); color: blue;"><img src="image/Nike nam.jpg" alt="Nike" style="height: 100%;">Nike</a>
+              </li>
+              <li is="listview-li">
+                <a href="#Content2" data-transition="flip" style="background-color: rgb(236, 234, 110); color: blue;"><img src="image/adidas nam.jpg" alt="Adidas" style="height: 100%;">Adidas</a>
+              </li>
+              <li is="listview-li">
+                <a href="#Content3" data-transition="fade" style="background-color: rgb(236, 234, 110); color: blue;"><img src="image/Converse nam.jpg" alt="Converse" style="height: 100%;">Converse</a>
+              </li>
+              <li is="listview-li">
+                <a href="#Content4" data-transition="slide" style="background-color: rgb(236, 234, 110); color: blue;"><img src="image/sneaker nam.jpg" alt="Sneakers" style="height: 100%;">Sneaker</a>
+              </li>
+            </ul>
+          </div>
+          <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+            <h3>@Nam Lim</h3>            
+          </div>
+        </div>
+        
+        
+        <!-- NIke Page: Content  --> 
+        <div id="Content1" data-role="page">
+          <div data-role="header" data-position="fixed" data-theme="c">
+            <h3>Nike style</h3>
+            <a class="ui-btn ui-btn-left" href="#Shoes" data-transition="slideup" data-direction="reverse">Back</a>
+          </div>
+          <div class="ui-content">
+            <div style="margin-top: 30px;" role="main" class="ui-content">
+              <div is="grid" class="ui-grid-b" style="height:500px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                  <img src="image/Air Jordan 4 Restro.webp" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Air Jordan 4 Restro</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                  <img src="image/Nike Joyride CC3 Setter.webp" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Nike Joyride CC3 Setter</h5>
+                  <input onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                  <img src="image/Nike Air Max 270 React.webp" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Nike Air Max 270 React</h5>
+                  <input onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Adidas Page: Content  --> 
+        <div id="Content2" data-role="page">
+          <div data-role="header" data-position="fixed" data-theme="c">
+            <h3>Adidas style</h3>
+            <a class="ui-btn ui-btn-left" href="#Shoes" data-transition="slideup" data-direction="reverse">Back</a>
+          </div>
+          <div class="ui-content">
+            <div style="margin-top: 30px;" role="main" class="ui-content" id="Shoes">
+              <div is="grid" class="ui-grid-b" style="height:500px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                  <img src="image/Yeezy Boost 700.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Yeezy Boost 700</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                  <img src="image/Prophere.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Prophere</h5>
+                  <input onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                  <img src="image/Falcon Beige EE4149.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Falcon Beige/Rose EE4149</h5>
+                  <input onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Converse Page: Content  --> 
+        <div id="Content3" data-role="page">
+          <div data-role="header" data-position="fixed" data-theme="c">
+            <h3>Converse style</h3>
+            <a class="ui-btn ui-btn-left" href="#Shoes" data-transition="slideup" data-direction="reverse">Back</a>
+          </div>
+          <div class="ui-content">
+            <div style="margin-top: 30px;" role="main" class="ui-content" id="Shoes">
+              <div is="grid" class="ui-grid-b" style="height:500px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                  <img src="image/converse chuck tay lor.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Converse Chuck Tay Lor</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                  <img src="image/canvas zipper Taylor.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Canvas Zipper Taylor</h5>
+                  <input onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                  <img src="image/Sneakers Gates 155064C.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Sneakers Gates 155064C</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Sneaker Page: Content  --> 
+        <div id="Content4" data-role="page" >
+          <div data-role="header" data-position="fixed" data-theme="c">
+            <h3>Sneaker style</h3>
+            <a class="ui-btn ui-btn-left" href="#Shoes" data-transition="slideup" data-direction="reverse">Home</a>
+          </div>
+          <div class="ui-content">
+            <div style="margin-top: 30px;" role="main" class="ui-content" id="Shoes">
+              <div is="grid" class="ui-grid-b" style="height:500px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                  <img src="image/Team sneaker.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Team sneaker</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                  <img src="image/White sneaker.jpeg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">White sneaker</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                  <img src="image/Gucci sneaker.jpg" style="width:100px; height: 100px; margin-top: 50px">
+                  <h5  style="text-align:center; margin-top:-5px;">Gucci sneaker</h5>
+                  <input  onclick="document.location.href='#order'" type="button" value="Purchase"></input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Start of Clothing page  -->
+        <div  is="page" id="Clothing" data-role="page" data-position="fixed" data-theme="c">
+          <div is="header" data-role="header" data-position="fixed" data-theme="a">
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide"s href="index.html" rel="internal"></a>
+            <h3>Sport Clothing</h3>
+          </div>
+          <div is="content" role="main" class="ui-content" style="margin:0 -12px">
+            <div is="grid" class="ui-grid-solo" style="height:300px">
+              <div is="block" class="ui-block-a" style="height:100%">
+                <img is="dragable" src="image/a1.webp" style="width:100px; height:100px; margin:20p;">
+                <img is="dragable" src="image/b1.webp" style="width:100px; height:100px; margin:20p;">
+                <img is="dragable" src="image/c1.jpg" style="width:100px; height:100px; margin:20p;">
+                <img is="dragable" src="image/d1.jpg" style="width:100px; height:100px; margin:20px;">
+              </div>
+            </div>
+            <div is="grid" class="ui-grid-solo" style="height:300px">
+              <div is="block" class="ui-block-a" style="height:100%">
+                <img is="dragable" src="image/a11.webp" style="width:100px; height:100px; margin:20px;">
+                <img is="dragable" src="image/b2.webp" style="width:100px; height:100px; margin:20p;">
+                <img is="dragable" src="image/c2.jpg" style="width:100px; height:100px; margin:20p;">
+                <img is="dragable" src="image/d2.webp" style="width:100px; height:100px; margin:20ppx;">
+              </div>
+            </div>
+          </div>  
+          <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+            <h3>@Nam Lim Sports Company</h3>            
+          </div>
+        </div>
+        
+        <!-- Start of order page  -->
+        <div is="page" id="order" data-role="page">
+          <div is="header" data-role="header" data-position="fixed" data-theme="a" style="-webkit-box-shadow:rgb(235, 223, 223) 0 2px 10px;">
+            <h3>Order</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide"s href="index.html" rel="internal"></a>
+          </div>
+          <div is="content" role="main" class="ui-content">
+            <div is="fieldcontain" class="ui-field-contain" style="margin-top:20px; border:none;">
+              <label for="text-1">Your name：</label>
+              <input is="text-input" type="text" name="text-1" id="text-1" value class="user_input">
+            </div>
+            <div is="fieldcontain" class="ui-field-contain" style="margin-top:-10px; border:none;">
+              <label for="text-2">Phone number：</label>
+              <input is="text-input" type="text" name="text-2" id="text-2" value class="user_input">
+            </div>
+            <div is="fieldcontain" class="ui-field-contain" style="margin-top:-10px; border:none;">
+              <label for="text-3">Address：</label>
+              <input is="text-input" type="text" name="text-3" id="text-3" value class="user_input">
+            </div>
+            <input onclick="document.location.href='#home'" type="button" value="Start ordering"></input>
+                </div> <br>
+            <div is="dragable" style="margin:-20px;">
+              <img src="https://previews.123rf.com/images/vaskinamat/vaskinamat1702/vaskinamat170200022/72494424-sport-banner-facebook-cover-set-of-sport-balls-and-gaming-items-at-a-blue-background-corporate-faceb.jpg" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>
